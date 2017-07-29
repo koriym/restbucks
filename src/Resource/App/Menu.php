@@ -1,6 +1,7 @@
 <?php
 namespace Koriym\Restbucks\Resource\App;
 
+use BEAR\Resource\Annotation\Link;
 use BEAR\Resource\ResourceObject;
 
 class Menu extends ResourceObject
@@ -13,6 +14,8 @@ class Menu extends ResourceObject
 
     /**
      * Restbucks Menu
+     *
+     * @Link(rel="order", href="/order", method="post")
      */
     public function onGet() : ResourceObject
     {
